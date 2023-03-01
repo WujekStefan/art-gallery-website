@@ -3,53 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>Frontend Mentor | Art gallery website</title>
+    <link rel="stylesheet" href="reset_utility.css" />
+    <link rel="stylesheet" href="location.css" />
   </head>
   <body>
-    <header class="header">
-      <section class="hero">
-        <button class="hero__button text-white bg-primary-200 text-uppercase">
-          <div class="bg-primary-100">
-            <img src="/icon-arrow-left.svg" alt="" />
-          </div>
-          Back to Home
-        </button>
-        <img src="/assets/mobile/image-map.png" alt="" />
-      </section>
+    <header class="header relative">
+      <a
+        href="index.html"
+        class="header__button text-white bg-primary-200 flex items-center font-big-shoulders-display text-uppercase"
+      >
+        <div class="header__button_logo bg-primary-100 flex justify-center">
+          <img src="/icon-arrow-left.svg" alt="" />
+        </div>
+        Back to Home
+      </a>
+      <img width="100%" src="/assets/mobile/image-map.png" alt="" />
     </header>
 
     <main>
       <section class="about grid bg-primary-200">
-        <div>
-          <h2
+        <div class="about__container">
+          <h1
             class="about__title text-white font-big-shoulders-display font-bolder text-uppercase"
           >
             Our location
-          </h2>
+          </h1>
         </div>
-        <span
-          class="about__subtitle text-primary-100 font-bolder font-big-shoulders-display text-uppercase"
-          >99 King Street</span
-        >
-        <p class="about__description">
-          Newport RI 02840 United States of America
-        </p>
+        <div class="about__container">
+          <h2
+            class="about__subtitle text-primary-100 font-bolder font-big-shoulders-display text-uppercase"
+          >
+            99 King Street
+          </h2>
+          <p class="about__description text-white font-small">
+            Newport <br />
+            RI 02840 <br />
+            United States of America
+          </p>
 
-        <p class="about__desceription font-small text-primary-300">
-          Our newly opened gallery is located near the Edward King House on 99
-          King Street, the Modern Art Gallery is free to all visitors and open
-          seven days a week from 8am to 9pm.
-        </p>
+          <p class="about__description font-small text-white font-small">
+            Our newly opened gallery is located near the Edward King House on 99
+            King Street, the Modern Art Gallery is free to all visitors and open
+            seven days a week from 8am to 9pm.
+          </p>
+        </div>
       </section>
     </main>
-    <footer class="footer bg-primary-100 flex">
+    <footer class="footer bg-primary-100">
       <h3
         class="footer__title font-big-shoulders-display font-bolder text-primary-200 text-uppercase"
       >
-        Modern Art Gallery
+        Modern <br />
+        Art Gallery
       </h3>
 
       <p class="footer__description font-small text-primary-200">
@@ -57,20 +71,32 @@
         week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
       </p>
       <div>
-        <ul class="socials">
+        <ul class="socials flex items-center" role="list">
           <li>
-            <a href="#" class="social">
-              <img src="/icon-facebook.svg" alt="" />
+            <a
+              href="#"
+              class="social flex items-center justify-center text-primary-200"
+            >
+              <span class="sr-only">facebook</span>
+              <i class="fa-brands fa-square-facebook"></i>
             </a>
           </li>
           <li>
-            <a href="#" class="social">
-              <img src="/icon-instagram.svg" alt="" />
+            <a
+              href="#"
+              class="social flex items-center justify-center text-primary-300"
+            >
+              <span class="sr-only">twitter</span>
+              <i class="fa-brands fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a href="#" class="social">
-              <img src="/icon-twitter.svg" alt="" />
+            <a
+              class="social flex items-center justify-center text-primary-200"
+              href="#"
+            >
+              <span class="sr-only">instagram</span>
+              <i class="fa-brands fa-twitter"></i>
             </a>
           </li>
         </ul>

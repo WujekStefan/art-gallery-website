@@ -1,79 +1,55 @@
-/* Block */
 .header {
-  min-height: 100vh;
   max-width: 1440px;
   margin-inline: auto;
 }
 
-.hero__title {
-  font-size: 3.75rem;
-  line-height: 3.4375rem;
-  padding-block: 2rem;
-  padding-inline: 1rem;
-}
-
-.hero__description {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  padding-inline: 1rem;
-  margin-bottom: 2rem;
-}
-
-.hero__button {
+.header__button {
   width: 70%;
   font-size: 1.25rem;
   line-height: 1.5rem;
   letter-spacing: 0.2188rem;
   padding: 0;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 1.5rem;
   border: none;
-  margin-left: 1rem;
   margin-bottom: 6rem;
+  position: absolute;
+  left: 0;
 }
 
-.hero__button:hover {
+.header__button:hover {
   background-color: var(--clr-primary-100);
   color: var(--clr-white);
 }
 
-.hero__button_logo {
+.header__button_logo {
   width: 25%;
   padding-block: 1.5rem;
   padding-inline: auto;
 }
 
-.hero__button_logo:hover {
+.header__button_logo:hover {
   background-color: var(--clr-primary-200);
 }
 
-.about {
-  max-width: 1440px;
-}
-
-.about__wrapper {
-  padding: 1rem;
-}
-
-.about__img {
-  margin-bottom: 1rem;
+.about__container {
+  padding-block: 1rem;
+  padding-inline: 1rem;
 }
 
 .about__title {
-  font-size: 3rem;
-  line-height: 3rem;
-  padding-bottom: 1rem;
+  font-size: 50px;
+}
+
+.about__subtitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .about__description {
   font-size: 18px;
+  line-height: 28px;
   margin-bottom: 2rem;
-}
-
-.about__container {
-  padding-block: 2.5rem;
-  padding-inline: 1.5rem;
-  margin-bottom: 5rem;
 }
 
 .footer {
@@ -95,7 +71,7 @@
 }
 
 .socials {
-  gap: 1.5rem;
+  gap: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -106,5 +82,5 @@
 }
 
 .social:hover {
-  color: var(--clr-primary-100);
+  color: var(--clr-white);
 }
