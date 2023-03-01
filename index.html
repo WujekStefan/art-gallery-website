@@ -53,87 +53,91 @@
     </header>
     <main>
       <section class="about">
-        <div class="about__container">
-          <picture class="about__img">
-            <source
-              width="100%"
-              srcset="assets/desktop/image-grid-1.jpg"
-              media="(min-width:1280px)"
-            />
-            <source
-              width="100%"
-              srcset="assets/tablet/image-grid-1.jpg"
-              media="(min-width:376px)"
-            />
-            <img width="100%" src="/assets/mobile/image-grid-1.jpg" alt="" />
-          </picture>
-          <div class="about container">
-            <h2
-              class="about__title font-big-shoulders-display font-bolder text-primary-200 text-uppercase"
-            >
-              Your day at the gallery
-            </h2>
+        <div class="about__wrapper">
+          <div>
+            <picture class="about__img">
+              <source
+                width="100%"
+                srcset="assets/desktop/image-grid-1.jpg"
+                media="(min-width:1280px)"
+              />
+              <source
+                width="100%"
+                srcset="assets/tablet/image-grid-1.jpg"
+                media="(min-width:376px)"
+              />
+              <img width="100%" src="/assets/mobile/image-grid-1.jpg" alt="" />
+            </picture>
+            <div>
+              <h1
+                class="about__title font-big-shoulders-display font-bolder text-primary-200 text-uppercase"
+              >
+                Your day <br />
+                at the gallery
+              </h1>
 
-            <p class="about__description text-primary-300 font-small">
-              Wander through our distinct collections and find new insights
-              about our artists. Dive into the details of their creative
-              process.
-            </p>
+              <p class="about__description text-primary-300 font-small">
+                Wander through our distinct collections and find new insights
+                about our artists. Dive into the details of their creative
+                process.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="about__container">
-          <picture class="hero__img">
-            <source
-              width="100%"
-              srcset="assets/desktop/image-grid-1.jpg"
-              media="(min-width:1280px)"
-            />
-            <source
-              width="100%"
-              srcset="assets/tablet/image-grid-1.jpg"
-              media="(min-width:376px)"
-            />
-            <img width="100%" src="/assets/mobile/image-grid-2.jpg" alt="" />
-          </picture>
-          <picture class="hero__img">
-            <source
-              width="100%"
-              srcset="assets/desktop/image-grid-2.jpg"
-              media="(min-width:1280px)"
-            />
-            <source
-              width="100%"
-              srcset="assets/tablet/image-grid-2.jpg"
-              media="(min-width:376px)"
-            />
-            <img width="100%" src="/assets/mobile/image-grid-1.jpg" alt="" />
-          </picture>
-          <div class="hero__container bg-primary-200">
-            <h2
-              class="hero__title font-big-shoulders-display font-bolder text-white text-uppercase"
-            >
-              Come &amp; be inspired
-            </h2>
-            <p class="hero__description text-white font-small">
-              We’re excited to welcome you to our gallery and see how our
-              collections influence you.
-            </p>
+          <div>
+            <picture class="about__img">
+              <source
+                width="100%"
+                srcset="assets/desktop/image-grid-1.jpg"
+                media="(min-width:1280px)"
+              />
+              <source
+                width="100%"
+                srcset="assets/tablet/image-grid-1.jpg"
+                media="(min-width:376px)"
+              />
+              <img width="100%" src="/assets/mobile/image-grid-2.jpg" alt="" />
+            </picture>
+            <picture class="about__img">
+              <source
+                width="100%"
+                srcset="assets/desktop/image-grid-2.jpg"
+                media="(min-width:1280px)"
+              />
+              <source
+                width="100%"
+                srcset="assets/tablet/image-grid-2.jpg"
+                media="(min-width:376px)"
+              />
+              <img width="100%" src="/assets/mobile/image-grid-1.jpg" alt="" />
+            </picture>
+            <div class="about__container bg-primary-200">
+              <h2
+                class="about__title font-big-shoulders-display font-bolder text-white text-uppercase"
+              >
+                Come &amp; be inspired
+              </h2>
+              <p class="about__description text-white font-small">
+                We’re excited to welcome you to our gallery and see how our
+                collections influence you.
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer bg-primary-200">
-      <h3
+      <h2
         class="footer__title font-big-shoulders-display font-bolder text-white text-uppercase"
       >
-        Modern Art Gallery
-      </h3>
+        Modern <br />
+        Art Gallery
+      </h2>
       <p class="footer__description text-white font-small">
         The Modern Art Gallery is free to all visitors and open seven days a
         week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
       </p>
       <div>
-        <ul class="socials">
+        <ul class="socials flex items-center" role="list">
           <li>
             <a href="#" class="social">
               <img src="/icon-facebook.svg" alt="" />

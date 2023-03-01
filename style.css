@@ -166,26 +166,31 @@ select {
 }
 
 /* Block */
+.header {
+  min-height: 100vh;
+  max-width: 1440px;
+  margin-inline: auto;
+}
 
 .hero__title {
-  font-size: 60px;
-  line-height: 55px;
+  font-size: 3.75rem;
+  line-height: 3.4375rem;
   padding-block: 2rem;
   padding-inline: 1rem;
 }
 
 .hero__description {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   padding-inline: 1rem;
   margin-bottom: 2rem;
 }
 
 .hero__button {
   width: 70%;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 3.5px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.2188rem;
   padding: 0;
   justify-content: flex-end;
   gap: 1.5rem;
@@ -198,4 +203,33 @@ select {
   width: 25%;
   padding-block: 1.5rem;
   padding-inline: auto;
+}
+
+.about {
+  max-width: 1440px;
+}
+
+.about__wrapper {
+  padding: 1rem;
+}
+
+.about__img {
+  margin-bottom: 1rem;
+}
+
+.about__title {
+  font-size: 3rem;
+  line-height: 3rem;
+  padding-bottom: 1rem;
+}
+
+.about__description {
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.about__container {
+  padding-block: 2.5rem;
+  padding-inline: 1.5rem;
+  margin-bottom: 5rem;
 }
