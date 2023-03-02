@@ -26,7 +26,19 @@
         </div>
         Back to Home
       </a>
-      <img width="100%" src="/assets/mobile/image-map.png" alt="" />
+      <picture class="about__img">
+        <source
+          width="100%"
+          srcset="assets/desktop/image-map.png"
+          media="(min-width:1280px)"
+        />
+        <source
+          width="100%"
+          srcset="assets/tablet/image-map.png"
+          media="(min-width:376px)"
+        />
+        <img width="100%" src="/assets/mobile/image-map.png" alt="" />
+      </picture>
     </header>
 
     <main>
@@ -58,7 +70,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer bg-primary-100">
+    <footer class="footer flex justify-between bg-primary-100">
       <h3
         class="footer__title font-big-shoulders-display font-bolder text-primary-200 text-uppercase"
       >

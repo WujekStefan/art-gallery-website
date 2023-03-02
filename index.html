@@ -63,7 +63,7 @@
     <main>
       <section class="about">
         <div class="about__wrapper">
-          <div>
+          <div class="about__container">
             <picture class="about__img">
               <source
                 width="100%"
@@ -92,20 +92,7 @@
               </p>
             </div>
           </div>
-          <div>
-            <picture class="about__img">
-              <source
-                width="100%"
-                srcset="assets/desktop/image-grid-1.jpg"
-                media="(min-width:1280px)"
-              />
-              <source
-                width="100%"
-                srcset="assets/tablet/image-grid-1.jpg"
-                media="(min-width:376px)"
-              />
-              <img width="100%" src="/assets/mobile/image-grid-2.jpg" alt="" />
-            </picture>
+          <div class="about__container grid">
             <picture class="about__img">
               <source
                 width="100%"
@@ -117,9 +104,22 @@
                 srcset="assets/tablet/image-grid-2.jpg"
                 media="(min-width:376px)"
               />
-              <img width="100%" src="/assets/mobile/image-grid-1.jpg" alt="" />
+              <img width="100%" src="/assets/mobile/image-grid-2.jpg" alt="" />
             </picture>
-            <div class="about__container bg-primary-200">
+            <picture class="about__img">
+              <source
+                width="100%"
+                srcset="assets/desktop/image-grid-3.jpg"
+                media="(min-width:1280px)"
+              />
+              <source
+                width="100%"
+                srcset="assets/tablet/image-grid-3.jpg"
+                media="(min-width:376px)"
+              />
+              <img width="100%" src="/assets/mobile/image-grid-3.jpg" alt="" />
+            </picture>
+            <div class="about__content bg-primary-200">
               <h2
                 class="about__title font-big-shoulders-display font-bolder text-white text-uppercase"
               >
@@ -134,17 +134,21 @@
         </div>
       </section>
     </main>
-    <footer class="footer bg-primary-200">
-      <h2
-        class="footer__title font-big-shoulders-display font-bolder text-white text-uppercase"
-      >
-        Modern <br />
-        Art Gallery
-      </h2>
-      <p class="footer__description text-white font-small">
-        The Modern Art Gallery is free to all visitors and open seven days a
-        week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
-      </p>
+    <footer class="footer bg-primary-200 flex justify-between">
+      <div>
+        <h2
+          class="footer__title font-big-shoulders-display font-bolder text-white text-uppercase"
+        >
+          Modern <br />
+          Art Gallery
+        </h2>
+      </div>
+      <div>
+        <p class="footer__description text-white font-small">
+          The Modern Art Gallery is free to all visitors and open seven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+      </div>
       <div>
         <ul class="socials flex items-center" role="list">
           <li>
